@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArmyCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardAgentCarr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardAgentsDeKravMaga.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardEliteAeroportee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardFinnLeChampionViking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardGardesZettiens.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardGrimnak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardGuerriersMarro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardGuerriersVikingsDeTarn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardMarchemort9000.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardMimring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardNeGokSa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardRaelinLaGuerriereKyrie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardSamouraisIzumi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardSgtDrakeAlexander.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardSyvarris.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyCardThorgrimLeChampionViking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseArmyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseLevelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnexionSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DocumentConfigDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FigureObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game3DView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameActionBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameActionView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameChatBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameChatView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDocServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlayerBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glh\glh_extensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalIHM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroscapeEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroscapeEditor3DView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroscapeEditorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroscapeEditorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoListBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinGameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinGameListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchDiceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlArmy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Marquer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialEdit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\MATRIX4X4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MdiClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\pbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonalTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreferenceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderOptionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sizecbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Smoke.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticGraphicalLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileAsphalt1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileAsphalt2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileAsphalt7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastle1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastle7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastle9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleArch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleBaseCorner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleBaseEnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleBaseStraight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleBattlement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleDoor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleFlag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleLadder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleWallCorner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleWallEnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileCastleWallStraight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileConcrete1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileConcrete2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileConcrete7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDungeon1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDungeon2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDungeon24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDungeon3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileDungeon7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileFigure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileFigure2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGlacier1_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGlacier3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGlacier4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGlacier6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGlyph1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGrass1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGrass2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGrass24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGrass3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileGrass7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileHive6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileIce1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLava1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLavaField1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLavaField2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLavaField7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMarvelWall6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMarvelWall6Breaked.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileOutcrop1_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileOutcrop3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePalm14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePalm15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePalm16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePerso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePerso1Dlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TilePersoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRoad1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRoad2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRoad5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRock1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRock2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRock24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRock3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRock7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRuin2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileRuin3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSand1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSand2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSand3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSand7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileShadow1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileShadow2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSnow1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSnow2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileStart1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwamp1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwamp2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwamp24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwamp3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwamp7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileSwampWater1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTicallaGrass1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTree1_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTree1_11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTree1_12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTree4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileWall4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileWater1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileWater2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ToDedicatedServerSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\VECTOR2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\VECTOR3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Maths\VECTOR4D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitingConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoomValueDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TileGrass24r0a.bmp">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="res\3DViewToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Attack.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BmpGameToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dPlayerHide.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dPlayHide1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="dPlayShow1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GameActions.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\gamechat.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\GeneralToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HeroscapeEditor.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HeroscapeEditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HexBackground.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_hero.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\idr_virt.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\infoview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\life.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\movement.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ObjectToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\objectvi.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedMask.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedPlay.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedPlayHide.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedPlayHide1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\predictedPlayHide2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\predictedPlayHide3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\predictedPlayHideX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedPlayShow1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\predictedPlayShow2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\predictedPlayShow3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\PredictedPlayShowX.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Range.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Shield.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ToolBar3DView.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ToolBarGame.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ToolBarView.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Validate.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\viewtool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ViewToolBar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmyCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardAgentCarr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardAgentsDeKravMaga.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardEliteAeroportee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardFinnLeChampionViking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardGardesZettiens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardGrimnak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardGuerriersMarro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardGuerriersVikingsDeTarn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardMarchemort9000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardMimring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardNeGokSa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardRaelinLaGuerriereKyrie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardSamouraisIzumi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardSgtDrakeAlexander.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardSyvarris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyCardThorgrimLeChampionViking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseArmyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseLevelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnexionSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateGameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocumentConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FigureObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game3DView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameActionView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameChatBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameChatView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDocServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePlayerBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="General.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalIHM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroscapeEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroscapeEditor3DView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroscapeEditorDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroscapeEditorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoListBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinGameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinGameListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchDiceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlArmy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Marquer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialEdit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MATRIX4X4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MdiClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonalTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreferenceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderOptionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sizecbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Smoke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketMessageId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticGraphicalLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileAsphalt1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileAsphalt2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileAsphalt7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastle1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastle7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastle9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleArch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleBaseCorner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleBaseEnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleBaseStraight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleBattlement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleDoor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleFlag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleLadder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleWallCorner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleWallEnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileCastleWallStraight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileConcrete1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileConcrete2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileConcrete7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDungeon1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDungeon2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDungeon24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDungeon3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileDungeon7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileFigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileFigure2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGlacier1_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGlacier3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGlacier4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGlacier6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGlyph1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGrass1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGrass2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGrass24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGrass3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileGrass7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileHive6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileIce1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLava1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLavaField1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLavaField2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLavaField7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMarvelWall6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMarvelWall6Breaked.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileOutcrop1_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileOutcrop3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePalm14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePalm15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePalm16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePerso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePerso1Dlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TilePersoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRoad1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRoad2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRoad5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRock1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRock2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRock24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRock3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRock7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRuin2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileRuin3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSand1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSand2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSand3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSand7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileShadow1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileShadow2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSnow1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSnow2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileStart1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwamp1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwamp2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwamp24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwamp3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwamp7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileSwampWater1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTicallaGrass1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTree1_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTree1_11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTree1_12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTree4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileWall4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileWater1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileWater2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToDedicatedServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitingConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZoomValueDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HeroscapeEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\HeroscapeEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="HeroscapeEditor.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

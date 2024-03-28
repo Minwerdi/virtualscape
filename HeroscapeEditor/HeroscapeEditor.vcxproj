@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{7BD3F378-A7CB-4A5F-800F-C7A2C32957FA}</ProjectGuid>
+    <RootNamespace>HeroscapeEditor</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34221.43</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Runtime\VirtualScape.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)Runtime\VirtualScape.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArmyCard.cpp" />
+    <ClCompile Include="ArmyCardAgentCarr.cpp" />
+    <ClCompile Include="ArmyCardAgentsDeKravMaga.cpp" />
+    <ClCompile Include="ArmyCardEliteAeroportee.cpp" />
+    <ClCompile Include="ArmyCardFinnLeChampionViking.cpp" />
+    <ClCompile Include="ArmyCardGardesZettiens.cpp" />
+    <ClCompile Include="ArmyCardGrimnak.cpp" />
+    <ClCompile Include="ArmyCardGuerriersMarro.cpp" />
+    <ClCompile Include="ArmyCardGuerriersVikingsDeTarn.cpp" />
+    <ClCompile Include="ArmyCardMarchemort9000.cpp" />
+    <ClCompile Include="ArmyCardMimring.cpp" />
+    <ClCompile Include="ArmyCardNeGokSa.cpp" />
+    <ClCompile Include="ArmyCardRaelinLaGuerriereKyrie.cpp" />
+    <ClCompile Include="ArmyCardSamouraisIzumi.cpp" />
+    <ClCompile Include="ArmyCardSgtDrakeAlexander.cpp" />
+    <ClCompile Include="ArmyCardSyvarris.cpp" />
+    <ClCompile Include="ArmyCardThorgrimLeChampionViking.cpp" />
+    <ClCompile Include="ArmyManager.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ChooseArmyDlg.cpp" />
+    <ClCompile Include="ChooseLevelDlg.cpp" />
+    <ClCompile Include="ClientSocket.cpp" />
+    <ClCompile Include="ConnexionSocket.cpp" />
+    <ClCompile Include="CreateGameDlg.cpp" />
+    <ClCompile Include="DocumentConfigDlg.cpp" />
+    <ClCompile Include="FigureObject.cpp" />
+    <ClCompile Include="Game3DView.cpp" />
+    <ClCompile Include="GameActionBar.cpp" />
+    <ClCompile Include="GameActionView.cpp" />
+    <ClCompile Include="GameChatBar.cpp" />
+    <ClCompile Include="GameChatView.cpp" />
+    <ClCompile Include="GameDoc.cpp" />
+    <ClCompile Include="GameDocServer.cpp" />
+    <ClCompile Include="GamePlayerBar.cpp" />
+    <ClCompile Include="glh\glh_extensions.cpp" />
+    <ClCompile Include="GlobalIHM.cpp" />
+    <ClCompile Include="HeroscapeEditor.cpp" />
+    <ClCompile Include="HeroscapeEditor3DView.cpp" />
+    <ClCompile Include="HeroscapeEditorDoc.cpp" />
+    <ClCompile Include="HeroscapeEditorView.cpp" />
+    <ClCompile Include="InfoListBar.cpp" />
+    <ClCompile Include="JoinGameDlg.cpp" />
+    <ClCompile Include="JoinGameListDlg.cpp" />
+    <ClCompile Include="LaunchDiceDlg.cpp" />
+    <ClCompile Include="ListCtrlArmy.cpp" />
+    <ClCompile Include="ListCtrlObject.cpp" />
+    <ClCompile Include="ListCtrlPlayer.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Marquer.cpp" />
+    <ClCompile Include="MaterialEdit.cpp" />
+    <ClCompile Include="Maths\MATRIX4X4.cpp" />
+    <ClCompile Include="Maths\VECTOR2D.cpp" />
+    <ClCompile Include="Maths\VECTOR3D.cpp" />
+    <ClCompile Include="Maths\VECTOR4D.cpp" />
+    <ClCompile Include="MdiClient.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="Object3D.cpp" />
+    <ClCompile Include="ObjectBar.cpp" />
+    <ClCompile Include="ObjectView.cpp" />
+    <ClCompile Include="PersonalTexture.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PreferenceDlg.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="RenderOptionDlg.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="shared\pbuffer.cpp" />
+    <ClCompile Include="sizecbar.cpp" />
+    <ClCompile Include="Smoke.cpp" />
+    <ClCompile Include="StaticGraphicalLib.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="TileAsphalt1.cpp" />
+    <ClCompile Include="TileAsphalt2.cpp" />
+    <ClCompile Include="TileAsphalt7.cpp" />
+    <ClCompile Include="TileCastle1.cpp" />
+    <ClCompile Include="TileCastle7.cpp" />
+    <ClCompile Include="TileCastle9.cpp" />
+    <ClCompile Include="TileCastleArch.cpp" />
+    <ClCompile Include="TileCastleBaseCorner.cpp" />
+    <ClCompile Include="TileCastleBaseEnd.cpp" />
+    <ClCompile Include="TileCastleBaseStraight.cpp" />
+    <ClCompile Include="TileCastleBattlement.cpp" />
+    <ClCompile Include="TileCastleDoor.cpp" />
+    <ClCompile Include="TileCastleFlag.cpp" />
+    <ClCompile Include="TileCastleLadder.cpp" />
+    <ClCompile Include="TileCastleWallCorner.cpp" />
+    <ClCompile Include="TileCastleWallEnd.cpp" />
+    <ClCompile Include="TileCastleWallStraight.cpp" />
+    <ClCompile Include="TileConcrete1.cpp" />
+    <ClCompile Include="TileConcrete2.cpp" />
+    <ClCompile Include="TileConcrete7.cpp" />
+    <ClCompile Include="TileDungeon1.cpp" />
+    <ClCompile Include="TileDungeon2.cpp" />
+    <ClCompile Include="TileDungeon24.cpp" />
+    <ClCompile Include="TileDungeon3.cpp" />
+    <ClCompile Include="TileDungeon7.cpp" />
+    <ClCompile Include="TileFigure.cpp" />
+    <ClCompile Include="TileFigure2.cpp" />
+    <ClCompile Include="TileGlacier1_7.cpp" />
+    <ClCompile Include="TileGlacier3.cpp" />
+    <ClCompile Include="TileGlacier4.cpp" />
+    <ClCompile Include="TileGlacier6.cpp" />
+    <ClCompile Include="TileGlyph1.cpp" />
+    <ClCompile Include="TileGrass1.cpp" />
+    <ClCompile Include="TileGrass2.cpp" />
+    <ClCompile Include="TileGrass24.cpp" />
+    <ClCompile Include="TileGrass3.cpp" />
+    <ClCompile Include="TileGrass7.cpp" />
+    <ClCompile Include="TileHive6.cpp" />
+    <ClCompile Include="TileIce1.cpp" />
+    <ClCompile Include="TileLava1.cpp" />
+    <ClCompile Include="TileLavaField1.cpp" />
+    <ClCompile Include="TileLavaField2.cpp" />
+    <ClCompile Include="TileLavaField7.cpp" />
+    <ClCompile Include="TileMarvelWall6.cpp" />
+    <ClCompile Include="TileMarvelWall6Breaked.cpp" />
+    <ClCompile Include="TileNumber.cpp" />
+    <ClCompile Include="TileOutcrop1_7.cpp" />
+    <ClCompile Include="TileOutcrop3.cpp" />
+    <ClCompile Include="TilePalm14.cpp" />
+    <ClCompile Include="TilePalm15.cpp" />
+    <ClCompile Include="TilePalm16.cpp" />
+    <ClCompile Include="TilePerso.cpp" />
+    <ClCompile Include="TilePerso1Dlg.cpp" />
+    <ClCompile Include="TilePersoDlg.cpp" />
+    <ClCompile Include="TileRoad1.cpp" />
+    <ClCompile Include="TileRoad2.cpp" />
+    <ClCompile Include="TileRoad5.cpp" />
+    <ClCompile Include="TileRock1.cpp" />
+    <ClCompile Include="TileRock2.cpp" />
+    <ClCompile Include="TileRock24.cpp" />
+    <ClCompile Include="TileRock3.cpp" />
+    <ClCompile Include="TileRock7.cpp" />
+    <ClCompile Include="TileRuin2.cpp" />
+    <ClCompile Include="TileRuin3.cpp" />
+    <ClCompile Include="TileSand1.cpp" />
+    <ClCompile Include="TileSand2.cpp" />
+    <ClCompile Include="TileSand3.cpp" />
+    <ClCompile Include="TileSand7.cpp" />
+    <ClCompile Include="TileShadow1.cpp" />
+    <ClCompile Include="TileShadow2.cpp" />
+    <ClCompile Include="TileSnow1.cpp" />
+    <ClCompile Include="TileSnow2.cpp" />
+    <ClCompile Include="TileStart1.cpp" />
+    <ClCompile Include="TileSwamp1.cpp" />
+    <ClCompile Include="TileSwamp2.cpp" />
+    <ClCompile Include="TileSwamp24.cpp" />
+    <ClCompile Include="TileSwamp3.cpp" />
+    <ClCompile Include="TileSwamp7.cpp" />
+    <ClCompile Include="TileSwampWater1.cpp" />
+    <ClCompile Include="TileTicallaGrass1.cpp" />
+    <ClCompile Include="TileTree1_10.cpp" />
+    <ClCompile Include="TileTree1_11.cpp" />
+    <ClCompile Include="TileTree1_12.cpp" />
+    <ClCompile Include="TileTree4.cpp" />
+    <ClCompile Include="TileWall4.cpp" />
+    <ClCompile Include="TileWater1.cpp" />
+    <ClCompile Include="TileWater2.cpp" />
+    <ClCompile Include="ToDedicatedServerSocket.cpp" />
+    <ClCompile Include="WaitingConnection.cpp" />
+    <ClCompile Include="ZoomValueDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="dPlayerHide.bmp" />
+    <Image Include="dPlayHide1.bmp" />
+    <Image Include="dPlayShow1.bmp" />
+    <Image Include="res\3DViewToolBar.bmp" />
+    <Image Include="res\Attack.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\BmpGameToolBar.bmp" />
+    <Image Include="res\GameActions.bmp" />
+    <Image Include="res\gamechat.bmp" />
+    <Image Include="res\GeneralToolBar.bmp" />
+    <Image Include="res\HeroscapeEditor.ico" />
+    <Image Include="res\HeroscapeEditorDoc.ico" />
+    <Image Include="res\HexBackground.bmp" />
+    <Image Include="res\idr_hero.ico" />
+    <Image Include="res\idr_virt.ico" />
+    <Image Include="res\infoview.bmp" />
+    <Image Include="res\life.bmp" />
+    <Image Include="res\movement.bmp" />
+    <Image Include="res\ObjectToolBar.bmp" />
+    <Image Include="res\objectvi.bmp" />
+    <Image Include="res\PredictedMask.bmp" />
+    <Image Include="res\PredictedPlay.bmp" />
+    <Image Include="res\PredictedPlayHide.bmp" />
+    <Image Include="res\PredictedPlayHide1.bmp" />
+    <Image Include="res\predictedPlayHide2.bmp" />
+    <Image Include="res\predictedPlayHide3.bmp" />
+    <Image Include="res\predictedPlayHideX.bmp" />
+    <Image Include="res\PredictedPlayShow1.bmp" />
+    <Image Include="res\predictedPlayShow2.bmp" />
+    <Image Include="res\predictedPlayShow3.bmp" />
+    <Image Include="res\PredictedPlayShowX.bmp" />
+    <Image Include="res\Range.bmp" />
+    <Image Include="res\Shield.bmp" />
+    <Image Include="res\TileGrass24r0a.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\ToolBar3DView.bmp" />
+    <Image Include="res\ToolBarGame.bmp" />
+    <Image Include="res\ToolBarView.bmp" />
+    <Image Include="res\Validate.bmp" />
+    <Image Include="res\viewtool.bmp" />
+    <Image Include="res\ViewToolBar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmyCard.h" />
+    <ClInclude Include="ArmyCardAgentCarr.h" />
+    <ClInclude Include="ArmyCardAgentsDeKravMaga.h" />
+    <ClInclude Include="ArmyCardEliteAeroportee.h" />
+    <ClInclude Include="ArmyCardFinnLeChampionViking.h" />
+    <ClInclude Include="ArmyCardGardesZettiens.h" />
+    <ClInclude Include="ArmyCardGrimnak.h" />
+    <ClInclude Include="ArmyCardGuerriersMarro.h" />
+    <ClInclude Include="ArmyCardGuerriersVikingsDeTarn.h" />
+    <ClInclude Include="ArmyCardMarchemort9000.h" />
+    <ClInclude Include="ArmyCardMimring.h" />
+    <ClInclude Include="ArmyCardNeGokSa.h" />
+    <ClInclude Include="ArmyCardRaelinLaGuerriereKyrie.h" />
+    <ClInclude Include="ArmyCardSamouraisIzumi.h" />
+    <ClInclude Include="ArmyCardSgtDrakeAlexander.h" />
+    <ClInclude Include="ArmyCardSyvarris.h" />
+    <ClInclude Include="ArmyCardThorgrimLeChampionViking.h" />
+    <ClInclude Include="ArmyManager.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ChooseArmyDlg.h" />
+    <ClInclude Include="ChooseLevelDlg.h" />
+    <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="ConnexionSocket.h" />
+    <ClInclude Include="CreateGameDlg.h" />
+    <ClInclude Include="DocumentConfigDlg.h" />
+    <ClInclude Include="FigureObject.h" />
+    <ClInclude Include="Game3DView.h" />
+    <ClInclude Include="GameActionBar.h" />
+    <ClInclude Include="GameActionView.h" />
+    <ClInclude Include="GameChatBar.h" />
+    <ClInclude Include="GameChatView.h" />
+    <ClInclude Include="GameDoc.h" />
+    <ClInclude Include="GameDocServer.h" />
+    <ClInclude Include="GamePlayerBar.h" />
+    <ClInclude Include="General.h" />
+    <ClInclude Include="GlobalIHM.h" />
+    <ClInclude Include="HeroscapeEditor.h" />
+    <ClInclude Include="HeroscapeEditor3DView.h" />
+    <ClInclude Include="HeroscapeEditorDoc.h" />
+    <ClInclude Include="HeroscapeEditorView.h" />
+    <ClInclude Include="InfoListBar.h" />
+    <ClInclude Include="JoinGameDlg.h" />
+    <ClInclude Include="JoinGameListDlg.h" />
+    <ClInclude Include="LaunchDiceDlg.h" />
+    <ClInclude Include="ListCtrlArmy.h" />
+    <ClInclude Include="ListCtrlObject.h" />
+    <ClInclude Include="ListCtrlPlayer.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Marquer.h" />
+    <ClInclude Include="MaterialEdit.h" />
+    <ClInclude Include="MATRIX4X4.h" />
+    <ClInclude Include="MdiClient.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="Object3D.h" />
+    <ClInclude Include="ObjectBar.h" />
+    <ClInclude Include="ObjectView.h" />
+    <ClInclude Include="PersonalTexture.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PreferenceDlg.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="RenderOptionDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="sizecbar.h" />
+    <ClInclude Include="Smoke.h" />
+    <ClInclude Include="SocketMessageId.h" />
+    <ClInclude Include="StaticGraphicalLib.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="TileAsphalt1.h" />
+    <ClInclude Include="TileAsphalt2.h" />
+    <ClInclude Include="TileAsphalt7.h" />
+    <ClInclude Include="TileCastle1.h" />
+    <ClInclude Include="TileCastle7.h" />
+    <ClInclude Include="TileCastle9.h" />
+    <ClInclude Include="TileCastleArch.h" />
+    <ClInclude Include="TileCastleBaseCorner.h" />
+    <ClInclude Include="TileCastleBaseEnd.h" />
+    <ClInclude Include="TileCastleBaseStraight.h" />
+    <ClInclude Include="TileCastleBattlement.h" />
+    <ClInclude Include="TileCastleDoor.h" />
+    <ClInclude Include="TileCastleFlag.h" />
+    <ClInclude Include="TileCastleLadder.h" />
+    <ClInclude Include="TileCastleWallCorner.h" />
+    <ClInclude Include="TileCastleWallEnd.h" />
+    <ClInclude Include="TileCastleWallStraight.h" />
+    <ClInclude Include="TileConcrete1.h" />
+    <ClInclude Include="TileConcrete2.h" />
+    <ClInclude Include="TileConcrete7.h" />
+    <ClInclude Include="TileDungeon1.h" />
+    <ClInclude Include="TileDungeon2.h" />
+    <ClInclude Include="TileDungeon24.h" />
+    <ClInclude Include="TileDungeon3.h" />
+    <ClInclude Include="TileDungeon7.h" />
+    <ClInclude Include="TileFigure.h" />
+    <ClInclude Include="TileFigure2.h" />
+    <ClInclude Include="TileGlacier1_7.h" />
+    <ClInclude Include="TileGlacier3.h" />
+    <ClInclude Include="TileGlacier4.h" />
+    <ClInclude Include="TileGlacier6.h" />
+    <ClInclude Include="TileGlyph1.h" />
+    <ClInclude Include="TileGrass1.h" />
+    <ClInclude Include="TileGrass2.h" />
+    <ClInclude Include="TileGrass24.h" />
+    <ClInclude Include="TileGrass3.h" />
+    <ClInclude Include="TileGrass7.h" />
+    <ClInclude Include="TileHive6.h" />
+    <ClInclude Include="TileIce1.h" />
+    <ClInclude Include="TileLava1.h" />
+    <ClInclude Include="TileLavaField1.h" />
+    <ClInclude Include="TileLavaField2.h" />
+    <ClInclude Include="TileLavaField7.h" />
+    <ClInclude Include="TileMarvelWall6.h" />
+    <ClInclude Include="TileMarvelWall6Breaked.h" />
+    <ClInclude Include="TileNumber.h" />
+    <ClInclude Include="TileOutcrop1_7.h" />
+    <ClInclude Include="TileOutcrop3.h" />
+    <ClInclude Include="TilePalm14.h" />
+    <ClInclude Include="TilePalm15.h" />
+    <ClInclude Include="TilePalm16.h" />
+    <ClInclude Include="TilePerso.h" />
+    <ClInclude Include="TilePerso1Dlg.h" />
+    <ClInclude Include="TilePersoDlg.h" />
+    <ClInclude Include="TileRoad1.h" />
+    <ClInclude Include="TileRoad2.h" />
+    <ClInclude Include="TileRoad5.h" />
+    <ClInclude Include="TileRock1.h" />
+    <ClInclude Include="TileRock2.h" />
+    <ClInclude Include="TileRock24.h" />
+    <ClInclude Include="TileRock3.h" />
+    <ClInclude Include="TileRock7.h" />
+    <ClInclude Include="TileRuin2.h" />
+    <ClInclude Include="TileRuin3.h" />
+    <ClInclude Include="TileSand1.h" />
+    <ClInclude Include="TileSand2.h" />
+    <ClInclude Include="TileSand3.h" />
+    <ClInclude Include="TileSand7.h" />
+    <ClInclude Include="TileShadow1.h" />
+    <ClInclude Include="TileShadow2.h" />
+    <ClInclude Include="TileSnow1.h" />
+    <ClInclude Include="TileSnow2.h" />
+    <ClInclude Include="TileStart1.h" />
+    <ClInclude Include="TileSwamp1.h" />
+    <ClInclude Include="TileSwamp2.h" />
+    <ClInclude Include="TileSwamp24.h" />
+    <ClInclude Include="TileSwamp3.h" />
+    <ClInclude Include="TileSwamp7.h" />
+    <ClInclude Include="TileSwampWater1.h" />
+    <ClInclude Include="TileTicallaGrass1.h" />
+    <ClInclude Include="TileTree1_10.h" />
+    <ClInclude Include="TileTree1_11.h" />
+    <ClInclude Include="TileTree1_12.h" />
+    <ClInclude Include="TileTree4.h" />
+    <ClInclude Include="TileWall4.h" />
+    <ClInclude Include="TileWater1.h" />
+    <ClInclude Include="TileWater2.h" />
+    <ClInclude Include="ToDedicatedServerSocket.h" />
+    <ClInclude Include="WaitingConnection.h" />
+    <ClInclude Include="ZoomValueDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HeroscapeEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HeroscapeEditor.reg" />
+    <None Include="res\HeroscapeEditor.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="HeroscapeEditor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
