@@ -16,10 +16,8 @@
 // French (France) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
-#ifdef _WIN32
 LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 #pragma code_page(1252)
-#endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -66,9 +64,13 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\HeroscapeEditor.ico"
+
 IDR_VIRTUALSCAPE2D      ICON                    "res\\HeroscapeEditorDoc.ico"
+
 IDR_VIRTUALSCAPE3D      ICON                    "res\\idr_hero.ico"
+
 IDR_VIRTUALSCAPEGAME3D  ICON                    "res\\idr_virt.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -76,47 +78,82 @@ IDR_VIRTUALSCAPEGAME3D  ICON                    "res\\idr_virt.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
 IDB_HEXBACKGROUND       BITMAP                  "res\\HexBackground.bmp"
+
 IDB_OBJECTVIEW          BITMAP                  "res\\infoview.bmp"
+
 IDR_TOOLBARVIEW         BITMAP                  "res\\ToolBarView.bmp"
+
 IDB_VIEWTOOLBAR         BITMAP                  "res\\ViewToolBar.bmp"
+
 IDR_TOOLBAROBJECT       BITMAP                  "res\\toolbar1.bmp"
+
 IDB_OBJECTTOOLBAR       BITMAP                  "res\\ObjectToolBar.bmp"
+
 IDB_GENERALTOOLBAR      BITMAP                  "res\\GeneralToolBar.bmp"
+
 IDB_BACKGROUND          BITMAP                  "res\\bitmap1.bmp"
+
 IDR_TOOLBAR3DVIEW       BITMAP                  "res\\ToolBar3DView.bmp"
+
 IDB_3DVIEWTOOLBAR       BITMAP                  "res\\3DViewToolBar.bmp"
+
 IDB_BRUSH_ONION         BITMAP                  "res\\bmp00001.bmp"
+
 IDB_INFOLIST            BITMAP                  "res\\bitmap2.bmp"
+
 IDB_IMAGELIST_INFO      BITMAP                  "res\\bmp00002.bmp"
+
 IDB_GAMECHATVIEW        BITMAP                  "res\\objectvi.bmp"
+
 IDB_GAMEPLAYERVIEW      BITMAP                  "res\\gamechat.bmp"
+
 IDB_GAMEACTIONVIEW      BITMAP                  "res\\bmp00003.bmp"
+
 IDB_SHIELD              BITMAP                  "res\\Shield.bmp"
+
 IDB_ATTACK              BITMAP                  "res\\Attack.bmp"
+
 IDB_VALIDATE            BITMAP                  "res\\Validate.bmp"
+
 IDB_MOVEMENT            BITMAP                  "res\\movement.bmp"
+
 IDB_RANGE               BITMAP                  "res\\Range.bmp"
+
 IDR_TOOLBARGAME         BITMAP                  "res\\ToolBarGame.bmp"
+
 IDB_GAMETOOLBAR         BITMAP                  "res\\BmpGameToolBar.bmp"
+
 IDB_LIFE                BITMAP                  "res\\life.bmp"
+
 IDB_PREDICTEDPLAYSHOWX  BITMAP                  "res\\PredictedPlayShowX.bmp"
+
 IDB_PREDICTEDPLAYSHOW1  BITMAP                  "res\\PredictedPlayShow1.bmp"
+
 IDB_PREDICTEDPLAYSHOW2  BITMAP                  "res\\predictedPlayShow2.bmp"
+
 IDB_PREDICTEDPLAYSHOW3  BITMAP                  "res\\predictedPlayShow3.bmp"
+
 IDB_PREDICTEDPLAYHIDEX  BITMAP                  "res\\predictedPlayHideX.bmp"
+
 IDB_PREDICTEDPLAYHIDE1  BITMAP                  "res\\PredictedPlayHide1.bmp"
+
 IDB_PREDICTEDPLAYHIDE2  BITMAP                  "res\\predictedPlayHide2.bmp"
+
 IDB_PREDICTEDPLAYHIDE3  BITMAP                  "res\\predictedPlayHide3.bmp"
+
 IDB_PREDICTEDPLAYHIDE   BITMAP                  "res\\PredictedPlayHide.bmp"
+
 IDB_PREDICTEDPLAYMASK   BITMAP                  "res\\PredictedMask.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Toolbar
 //
 
-IDR_MAINFRAME TOOLBAR  32, 32
+IDR_MAINFRAME TOOLBAR 32, 32
 BEGIN
     BUTTON      ID_FILE_NEW
     BUTTON      ID_FILE_OPEN
@@ -128,7 +165,7 @@ BEGIN
     BUTTON      ID_APP_ABOUT
 END
 
-IDR_TOOLBARVIEW TOOLBAR  32, 32
+IDR_TOOLBARVIEW TOOLBAR 32, 32
 BEGIN
     BUTTON      ID_FULLVIEW
     SEPARATOR
@@ -142,7 +179,7 @@ BEGIN
     BUTTON      ID_NEW_3DVIEW
 END
 
-IDR_TOOLBAROBJECT TOOLBAR  32, 32
+IDR_TOOLBAROBJECT TOOLBAR 32, 32
 BEGIN
     BUTTON      ID_EDIT_ROTATE_LEFT
     BUTTON      ID_EDIT_ROTATE_RIGHT
@@ -150,7 +187,7 @@ BEGIN
     BUTTON      ID_EDIT_REMOVE
 END
 
-IDR_TOOLBAR3DVIEW TOOLBAR  32, 32
+IDR_TOOLBAR3DVIEW TOOLBAR 32, 32
 BEGIN
     BUTTON      IDR_TOOLBAR3D_DISPLAYSHADOW
     BUTTON      ID_OUTILS_VUESTEREO
@@ -169,7 +206,7 @@ BEGIN
     BUTTON      ID_VIDEO_CREATE_FILE
 END
 
-IDR_TOOLBARGAME TOOLBAR  32, 32
+IDR_TOOLBARGAME TOOLBAR 32, 32
 BEGIN
     BUTTON      ID_PLACE_FIGURE_ON_MAP
     BUTTON      ID_REMOVE_FIGURE_FROM_MAP
@@ -198,7 +235,7 @@ END
 // Menu
 //
 
-IDR_MAINFRAME MENU 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "&Fichier"
     BEGIN
@@ -243,7 +280,7 @@ BEGIN
     END
 END
 
-IDR_VIRTUALSCAPE2D MENU 
+IDR_VIRTUALSCAPE2D MENU
 BEGIN
     POPUP "&Fichier"
     BEGIN
@@ -310,6 +347,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "&Numérotation",               ID_OUTILS_NUMBER
         MENUITEM "Construction inve&rsée",      ID_OUTILS_REVERSE
+        MENUITEM "Exporter une chaîne de champ de bataille", ID_OUTILS_DISPLAYMAPCODE
         MENUITEM SEPARATOR
         MENUITEM "&Vérifier le champs de bataille", ID_DOC_CHECK
         MENUITEM SEPARATOR
@@ -345,7 +383,7 @@ BEGIN
     END
 END
 
-IDR_VIRTUALSCAPE3D MENU 
+IDR_VIRTUALSCAPE3D MENU
 BEGIN
     POPUP "&Fichier"
     BEGIN
@@ -442,7 +480,7 @@ BEGIN
     END
 END
 
-IDR_VIRTUALSCAPEGAME3D MENU 
+IDR_VIRTUALSCAPEGAME3D MENU
 BEGIN
     POPUP "&Fichier"
     BEGIN
@@ -503,7 +541,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     VK_F1,          ID_AIDE_AIDEGLOBALE,    VIRTKEY, NOINVERT
     VK_DELETE,      ID_EDIT_REMOVE,         VIRTKEY, NOINVERT
@@ -563,7 +601,7 @@ IDD_GAMECHATVIEW DIALOGEX 0, 0, 313, 106
 STYLE DS_SETFONT | WS_CHILD
 FONT 8, "MS Sans Serif", 400, 0, 0x0
 BEGIN
-    CONTROL         "",IDC_RICHEDIT_MESSAGE,"RichEdit20W",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,299,71
+    CONTROL         "",IDC_RICHEDIT_MESSAGE,"RichEdit20W",WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 0x18c4,7,7,299,71
     EDITTEXT        IDC_EDIT_MESSAGE,7,86,234,13,ES_AUTOHSCROLL
     DEFPUSHBUTTON   "Envoyer",IDC_BUTTON_SEND,253,85,53,14
 END
@@ -907,7 +945,7 @@ BEGIN
     LTEXT           "Nombre de joueurs :",IDC_STATIC,277,25,65,8
     EDITTEXT        IDC_EDIT_PLAYER_NUMBER,345,24,24,12,ES_AUTOHSCROLL
     LTEXT           "Scénario :",IDC_STATIC,7,46,33,8
-    CONTROL         "",IDC_RICHEDIT_SCENARIO,"RichEdit20W",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,61,362,148
+    CONTROL         "",IDC_RICHEDIT_SCENARIO,"RichEdit20W",WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 0x11c4,7,61,362,148
     PUSHBUTTON      "Gras",IDC_BUTTON_BOLD,71,43,19,16
     PUSHBUTTON      "Souligné",IDC_BUTTON_UNDERLINE,94,43,33,16
     PUSHBUTTON      "Italique",IDC_BUTTON_ITALIC,130,43,33,16
@@ -1254,7 +1292,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -1442,7 +1480,7 @@ END
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDP_OLE_INIT_FAILED     "Échec de l'initialisation d'OLE. Assurez-vous que vous utilisez la bonne version des bibliothèques OLE."
     IDS_FILE_VERSION_TOO_RECENT "Version des fichiers trop récente."
@@ -1458,7 +1496,7 @@ BEGIN
     IDS_SNOW                "Neige"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "VirtualScape"
     IDR_VIRTUALSCAPE2D      "\nBataille\nBataille\nChamps de bataille Heroscape (*.hsc)\n.hsc\nVirtualScape.Document\nVirtualScape.Document"
@@ -1478,13 +1516,13 @@ BEGIN
     IDS_LAVAFIELD           "Champs de lave"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "VirtualScape"
     AFX_IDS_IDLEMESSAGE     "Prêt"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
     ID_INDICATOR_CAPS       "CAP"
@@ -1494,7 +1532,7 @@ BEGIN
     ID_INDICATOR_REC        "ENR"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Crée un nouveau champs de bataille\nNouveau"
     ID_FILE_OPEN            "Ouvre un champs de bataille existant\nOuvrir"
@@ -1507,13 +1545,13 @@ BEGIN
     ID_FILE_PRINT_PREVIEW   "Affiche les pages entières\nAperçu avant impression"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "Affiche des informations concernant le programme, le numéro de version et le copyright\nÀ propos de"
     ID_APP_EXIT             "Quitte l'application et demande si les champs de bataille doivent être enregistrés\nQuitter"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_MRU_FILE1       "Ouvrir ce champs de bataille"
     ID_FILE_MRU_FILE2       "Ouvrir ce champs de bataille"
@@ -1533,13 +1571,13 @@ BEGIN
     ID_FILE_MRU_FILE16      "Ouvrir ce champs de bataille"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            " "
     ID_PREV_PANE            " "
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_NEW           "Ouvre une autre fenêtre pour le champs de bataille actif\nNouvelle fenêtre"
     ID_WINDOW_ARRANGE       "Réorganise les icônes en bas de la fenêtre\nRéorganiser les icônes"
@@ -1549,7 +1587,7 @@ BEGIN
     ID_WINDOW_SPLIT         " "
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
     ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
@@ -1564,13 +1602,13 @@ BEGIN
     ID_EDIT_REDO            " "
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nActiver/Désactiver Barre d'outils"
     ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nActiver/Désactiver Barre d'état"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
     AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
@@ -1581,19 +1619,19 @@ BEGIN
     AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les champs de bataille doivent être enregistrés"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
     AFX_IDS_SCTASKLIST      " "
     AFX_IDS_MDICHILD        "Active cette fenêtre"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Rouge/cyan"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_ROTATE_RIGHT    "Pivote la sélection à droite.\nPivote à droite"
     ID_EDIT_REMOVE          "Supprimer les objets sélectionnés.\nSupprime sélection"
@@ -1603,7 +1641,7 @@ BEGIN
                             "Permet de définir le matériel disponible.\nMatériel disponible"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_TREE                "Arbre"
     IDS_RUIN                "Ruine"
@@ -1623,7 +1661,7 @@ BEGIN
     IDS_MITONSOUL_GLYPH     "Glyphe de Mitonsoul"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_WATER               "Eau"
     IDS_GENERALTOOLBARTITLE "Outils généraux"
@@ -1645,7 +1683,7 @@ BEGIN
     IDS_CASTLE_WALL_CORNER  "Mur coin"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_AFFICHAGE_BARRE2D    "Affiche ou cache la barre d'outils des vues 2D.\nAffiche/Cache barre d'outils vues 2D"
     ID_AFFICHAGE_BARREOBJET "Affiche ou cache la barre d'outils des objets.\nAffiche/Cache barre d'outils objets"
@@ -1657,7 +1695,7 @@ BEGIN
     ID_SELECT_LEVELUP       "Monter les tuiles sélectionnées d'un niveau.\nMonter la sélection"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_ZOOMIN               "Zoom positif sur la vue active.\nZoom +"
     ID_ZOOMOUT              "Zoom négatif sur la vue active.\nZoom -"
@@ -1666,7 +1704,7 @@ BEGIN
     ID_LEVELDOWN            "Niveau inférieur sur la vue active.\nNiveau inférieur"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_FAILED_INIT_OPENGLEXT 
                             "Impossible d'initialiser les extensions OpenGL."
@@ -1687,7 +1725,7 @@ BEGIN
     IDS_REMAINING3          "%i%c (Temps restant %i second)"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_GRIMNAK             "GRIMNAK"
     IDS_FINNLECHAMPIONVIKING "FINN LE CHAMPION VIKING"
@@ -1707,7 +1745,7 @@ BEGIN
     IDS_ELITEAEROPORTEE1_4  "ELITE AEROPORTEE 1/4"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SELECT_LEVELDOWN     "Descendre les tuiles sélectionnées d'un niveau.\nDescendre sélection"
     ID_OUTILS_REVERSE       "Construit en mode inverse.\nMode inverse"
@@ -1718,9 +1756,11 @@ BEGIN
     ID_OUTILS_TOURNEAUTOUR  "Tourne autour du champs de bataille.\nTourne autour"
     ID_OUTILS_VOIRLACONSTRUCTION 
                             "Voir la construction du champs de bataille.\nVoir construction"
+    ID_OUTILS_DISPLAYMAPCODE 
+                            "Exportez ce champ de bataille sous forme de chaîne de carte pour une utilisation dans d'autres applications.\nExporter une chaîne de champ de bataille"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SELECT_LEVEL         "Sélectionner toute les tuiles du niveau.\nSélectionner niveau"
     ID_AFFICHAGE_FENETRE_OBJET 
@@ -1729,7 +1769,7 @@ BEGIN
                             "Affiche ou masque la fenêtre information.\nAffiche/cache fenêtre information"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CASTLE_WALL_STRAIGHT "Mur droit"
     IDS_CASTLE_WALL_END     "Mur fin"
@@ -1749,7 +1789,7 @@ BEGIN
     IDS_NBTILE_ANDZMAX      "Nombre d'erreur : %i (%i+%i). Nombre de pièce : %i. Niveau le plus haut : %i."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_DOC_CHECK            "Verifie le champs de bataille.\nVerifier"
     ID_AIDE_AIDEGLOBALE     "Manuel utilisateur de VirtualScape"
@@ -1757,7 +1797,7 @@ BEGIN
                             "Gestion des pièces personnelles.\nPièces personnelles"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_OTHER_TILE_AT_SAME_PLACE 
                             "L'emplacement est déjà utilisé par une autre pièce de type %s."
@@ -1778,7 +1818,7 @@ BEGIN
     IDS_SGTDRAKEALEXANDER   "SGT. DRAKE ALEXANDER"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_ELITEAEROPORTEE2_4  "ELITE AEROPORTEE 2/4"
     IDS_ELITEAEROPORTEE3_4  "ELITE AEROPORTEE 3/4"
@@ -1798,7 +1838,7 @@ BEGIN
     IDS_FILL_GAME_NAME      "Le champ 'Nom' de la partie doit être complété."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDITION_COUPER       "Déplacer la sélection dans le presse papier.\nCouper"
     ID_EDITION_COLLER       "Coller du presse papier.\nColler"
@@ -1814,7 +1854,7 @@ BEGIN
     ID_JOUER_QUITTERLEJEU   "Quitter le jeu en cours.\nQuitter le jeu"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_FILL_GAME_POINT     "Le champ 'Point' de la partie doit être supérieur à zéro."
     IDS_PLAYER_MAX_TOO_LOW  "Le nombre de joueur doit être au moins de 2."
@@ -1835,7 +1875,7 @@ BEGIN
     IDS_ACTION_UNKNOWN      "Action inconnue"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_POINTFORARMY        "Points restant : %i"
     IDS_AGENTCARRNAME       "Agent Carr"
@@ -1855,7 +1895,7 @@ BEGIN
     IDS_MARCHEMORT9000NAME  "Marchemort 9000"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_MIMRINGNAME         "Mimring"
     IDS_NEGOKSANAME         "Ne-Gok-Sa"
@@ -1875,7 +1915,7 @@ BEGIN
     IDS_TUNDRA              "Neige"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_ZOOMVALUE            "Définir le niveau de zoom.\nNiveau zoom"
     ID_OUTILS_NUMBER        "Affiche les lignes et colonnes.\nLigne et colonnes"
@@ -1887,14 +1927,14 @@ BEGIN
     ID_VIDEO_CREATE_FILE    "Créer les fichiers image pour l'animation.\nCréer fichiers image."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_FORTRESS            "Chateau"
     IDS_VOLCARREN           "Volcan"
     IDS_TICALLA             "Jungle"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OUTILS_INSERTLEVEL   "Insérer un niveau sous le niveau actuel.\nInsérer niveau."
     ID_OUTILS_REMOVELEVEL   "Supprime le niveau actuel.\nSupprime niveau."
@@ -1902,7 +1942,7 @@ BEGIN
     ID_OUTILS_ALLER32907    "Aller directement à un niveau.\nAller niveau"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_TICALLA_PALM        "Palmier"
     IDS_TICALLA_GRASS       "Buisson"
@@ -1922,7 +1962,7 @@ BEGIN
     IDS_BLADE_GRUTS3_4      "BLADE GRUTS 3/4"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OUTILS_VUETOPOGRAPHIQUE 
                             "Afficher sous forme de vue topographique.\nVue topographique"
@@ -1941,7 +1981,7 @@ BEGIN
     ID_NEXT_TURN            "Passe au tour suivant.\nTour suivant"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_BLADE_GRUTS4_4      "BLADE GRUTS 4/4"
     IDS_MARCUS_DECIMUS_GALLUS "MARCUS DECIMUS GALLUS"
@@ -1961,7 +2001,7 @@ BEGIN
     IDS_PLACED_ARMY         "Positionnement de la figurine %s"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_REMOVED_ARMY        "Suppression de la figurine %s"
     IDS_MOVED_ARMY          "Déplacement de la figurine %s"
@@ -1981,7 +2021,7 @@ BEGIN
     IDS_CONTEXTUALMENU_ADDPREDICTED2 "Marqueur d'ordre 2"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OUTILS_SAUVERLEREPLAYDELAPARTIE 
                             "Sauve le replay de la partie sous forme de fichiers image.\nSauver replay en image"
@@ -1993,7 +2033,7 @@ BEGIN
     ID_REPLAY_GAME          "Rejoue la partie.\nRejoue partie"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_CONTEXTUALMENU_ADDPREDICTED3 "Marqueur d'ordre 3"
     IDS_CONTEXTUALMENU_SHOWPREDICTED "Montre le prochain marqueur d'ordre"
@@ -2005,7 +2045,7 @@ BEGIN
     IDS_CONTEXTUALMENU_REMOVEMARKER "Enlève tous les marqueurs d'ordre"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_REPLAY_TO_FILE       "Sauver le replay en haute qualité dans des fichiers pour en faire une animation.\nFaire un film d'animation"
     ID_DIE_20               "Lance le dé à 20 faces.\nDé 20 faces"

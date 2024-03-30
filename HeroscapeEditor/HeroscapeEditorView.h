@@ -200,6 +200,7 @@ public:
 	afx_msg void OnOutilsInsertlevel();
 	afx_msg void OnOutilsGoLevel();
 	afx_msg void OnSelectSameTileSameLevel();
+    afx_msg void OnExportMapCode();
 };
 
 inline CHeroscapeEditorDoc* CHeroscapeEditorView::GetDocument() const { return reinterpret_cast<CHeroscapeEditorDoc*>(m_pDocument); }

@@ -68,6 +68,7 @@ BEGIN_MESSAGE_MAP(CHeroscapeEditorView, CScrollView)
 	ON_COMMAND(ID_OUTILS_INSERTLEVEL, &CHeroscapeEditorView::OnOutilsInsertlevel)
 	ON_COMMAND(ID_OUTILS_GO_LEVEL, &CHeroscapeEditorView::OnOutilsGoLevel)
 	ON_COMMAND(ID_SELECT_SAME_TILE_SAME_LEVEL, &CHeroscapeEditorView::OnSelectSameTileSameLevel)
+    ON_COMMAND(ID_OUTILS_DISPLAYMAPCODE, &CHeroscapeEditorView::OnExportMapCode)
 END_MESSAGE_MAP()
 
 // The constructor
@@ -2019,4 +2020,9 @@ void CHeroscapeEditorView::OnSelectSameTileSameLevel()
 	pDoc->RedrawAllViews();
 
 	pDoc->DisplaySelectedCount();
+}
+
+void CHeroscapeEditorView::OnExportMapCode()
+{
+
 }

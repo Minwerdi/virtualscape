@@ -664,6 +664,7 @@
 #define ID_OUTILS_VUED                  32826
 #define ID_OUTILS_TOURNEAUTOUR          32827
 #define ID_OUTILS_VOIRLACONSTRUCTION    32830
+#define ID_OUTILS_DISPLAYMAPCODE		32831
 #define ID_S32837                       32837
 #define ID_SELECT_LEVEL                 32838
 #define ID_AFFICHAGE_FEN32844           32844
