@@ -2,6 +2,8 @@
 #define _TILE_H_
 
 #include "GL\gl.h"
+#include <map>
+#include <string>
 
 #include "ClientSocket.h"
 #include "General.h"
@@ -175,6 +177,8 @@ public:
 	double		m_AttackTime;
 	// Life time of one dice on attack mode
 	double		m_AttackTimeOnDice;
+    // The list of map codes
+    static const std::map<int, std::string> m_mapCodes;
 
 protected:
 	// The target list

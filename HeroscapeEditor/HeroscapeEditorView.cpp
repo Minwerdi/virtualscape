@@ -4,6 +4,7 @@
 #include "StdAfx.h"
 
 #include <Math.h>
+#include <algorithm>
 
 #include "ChooseLevelDlg.h"
 #include "HeroscapeEditor.h"
@@ -2024,5 +2025,159 @@ void CHeroscapeEditorView::OnSelectSameTileSameLevel()
 
 void CHeroscapeEditorView::OnExportMapCode()
 {
-
+    CHeroscapeEditorDoc* pDoc = GetDocument();
+    int tileCount = pDoc->m_TileList.GetCount();
+    // Update information and check for errors.
+    pDoc->OnDocCheck();
+    // No tiles. Map code is pretty easy to make here,
+    // so show it in a dialog and call it quits.
+    if (tileCount == 0)
+    {
+        AfxMessageBox(_T("Battlefiled has no tiles. Won't save a map code of 0x0x0."), MB_OK | MB_ICONWARNING);
+        return;
+    }
+    // Pieces are overlapping, so don't build an invalid map code.
+    // TODO: Expand messages when set of errors expand.
+    else if (pDoc->m_NbCritical > 0)
+    {
+        AfxMessageBox(_T("Battlefield cannot be constructed (tiles are overlapping in the same physical area)."), MB_OK | MB_ICONSTOP);
+        return;
+    }
+    // Some pieces are floating. Still valid, but tell the user
+    // just in case.
+    // TODO: Expand messages when set of warnings expand.
+    else if (pDoc->m_NbWarning > 0)
+    {
+        AfxMessageBox(_T("Some tiles above the first level have nothing underneath them and will fall when physically built."), MB_OK | MB_ICONWARNING);
+    }
+    // Prepare a vector of tiles for sorting
+    std::vector<CTile*> vecTileList;
+    // List extensions to tile codes for start zone colors
+    // and glyphs.
+    std::map<COLORREF, std::string> mapColorList{
+        {RGB(255,0,0), "RD"},
+        {RGB(0,255,0), "GR"},
+        {RGB(0,0,255), "BL"},
+        {RGB(255,255,0), "YL"},
+        {RGB(255,0,255), "PK"},
+        {RGB(0,255,255), "TL"},
+        {RGB(255,128,0), "OR"},
+        {RGB(128,0,255), "PR"}
+    };
+    std::map<char, std::string> mapGlyphList{
+        {'?', "RD"},
+        {'A', "AS"},
+        {'G', "GR"},
+        {'I', "IV"},
+        {'V', "VD"},
+        {'D', "DG"},
+        {'B', "BR"},
+        {'K', "KD"},
+        {'E', "ER"},
+        {'M', "MS"},
+        {'L', "LD"},
+        {'S', "ST"},
+        {'R', "RV"},
+        {'J', "JG"},
+        {'W', "WN"},
+        {'P', "PT"},
+        {'O', "OR"},
+        {'N', "NL"},
+        {'C', "CC"},
+        {'T', "TH"},
+        {'U', "UN"}
+    };
+    // Reference each tile (soft copy) to a standard vector.
+    for (int i = 0; i < tileCount; i++)
+    {
+        vecTileList.push_back(static_cast<CTile*>(pDoc->m_TileList[i]));
+    }
+    // Sort the vector of tile references to match approxiamte build order.
+    std::sort(vecTileList.begin(), vecTileList.end(), [](CTile* a, CTile* b)
+        {
+            // Start zones last.
+            if ((a->m_Type == TYPE_STARTAREA * 1000 + 1) != (b->m_Type == TYPE_STARTAREA * 1000 + 1))
+            {
+                return (b->m_Type == TYPE_STARTAREA * 1000 + 1);
+            }
+            // Battlements/Ladders/Flag last before start zones.
+            if ((a->m_Type == TYPE_CASTLE * 1000 + 301 || a->m_Type == TYPE_CASTLE * 1000 + 402 || a->m_Type == TYPE_CASTLE * 1000 + 403) !=
+                (b->m_Type == TYPE_CASTLE * 1000 + 301 || b->m_Type == TYPE_CASTLE * 1000 + 402 || b->m_Type == TYPE_CASTLE * 1000 + 403))
+            {
+                return (b->m_Type == TYPE_CASTLE * 1000 + 301 || b->m_Type == TYPE_CASTLE * 1000 + 402 || b->m_Type == TYPE_CASTLE * 1000 + 403);
+            }
+            // Keep start zone colors together.
+            if ((a->m_Type == TYPE_STARTAREA * 1000 + 1) && (b->m_Type == TYPE_STARTAREA * 1000 + 1))
+            {
+                return a->m_TileColor < b->m_TileColor;
+            }
+            // Same type of tile. Lower levels first.
+            if (a->m_PosZ != b->m_PosZ)
+            {
+                return a->m_PosZ < b->m_PosZ;
+            }
+            // Same level. Then go by rows.
+            if (a->m_PosY != b->m_PosY)
+            {
+                return a->m_PosY < b->m_PosY;
+            }
+            // Same level/row. Leftwards-columns first.
+            if (a->m_PosX != b->m_PosX)
+            {
+                return a->m_PosX < b->m_PosX;
+            }
+            // Same position (should not get here). Use rotation as
+            // the unnecessary tie-breaker.
+            return a->m_CurrentRotation < b->m_CurrentRotation;
+        });
+    // Initialize map code (output string).
+    std::string strMapCode = "";
+    // Initialize dimensions strings. Need their lengths for later.
+    std::string strMapWidth = std::to_string(pDoc->m_XWidth);
+    std::string strMapHeight = std::to_string(pDoc->m_YHeight);
+    std::string strMapLevel = std::to_string(pDoc->m_LevelMax + 1);
+    // Record map size. Seperate fields with x's and ':'.
+    strMapCode += strMapWidth + 'x' + strMapHeight + 'x' + strMapLevel + ':';
+    // Now loop through each tile.
+    for (int i = 0; i < tileCount; i++)
+    {
+        CTile* targetTile = vecTileList.at(i);
+        // See if the tile's type is one we know.
+        // Skip it if we don't.
+        if (!CTile::m_mapCodes.count(targetTile->m_Type) > 0)
+        {
+            continue;
+        }
+        // Initialize tile strings.
+        std::string strTileType = CTile::m_mapCodes.at(targetTile->m_Type);
+        std::string strTileX = std::to_string(targetTile->m_PosX + 1);
+        std::string strTileY = std::to_string(targetTile->m_PosY + 1);
+        std::string strTileLevel = std::to_string(targetTile->m_PosZ + 1);
+        // Add colors to start zone type code.
+        if (strTileType == "SZ??")
+        {
+            strTileType.replace(2, 2, mapColorList.at(targetTile->m_TileColor));
+        }
+        // Add specific glyph to glyph type code.
+        else if (strTileType == "GL??")
+        {
+            strTileType.replace(2, 2, mapGlyphList.at(targetTile->m_GlyphLetter));
+        }
+        // Append the tile's string to the map code.
+        // Pad the length, width, and height parts to the same length
+        // as the map's dimensions so that each tile is the same length.
+        strMapCode += strTileType;
+        strMapCode += std::to_string(targetTile->m_CurrentRotation);
+        strMapCode += strTileX.insert(0, strMapWidth.length() - strTileX.length(), '0');
+        strMapCode += strTileY.insert(0, strMapHeight.length() - strTileY.length(), '0');
+        strMapCode += strTileLevel.insert(0, strMapLevel.length() - strTileLevel.length(), '0');
+    }
+    // Save the map code as a text file.
+    CFileDialog dlgSaveAs(FALSE, _T("txt"), pDoc->m_Name, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, _T("Text Files (*.txt)|*.txt"));
+    if (dlgSaveAs.DoModal() == IDOK)
+    {
+        CFile fileMapCode(dlgSaveAs.GetPathName(), CFile::modeWrite | CFile::modeCreate);
+        fileMapCode.Write(strMapCode.c_str(), strMapCode.length());
+        fileMapCode.Close();
+    }
 }
